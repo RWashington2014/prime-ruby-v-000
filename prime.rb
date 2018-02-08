@@ -8,6 +8,6 @@ def prime?(int)
    end
    range = (2...int)
    range.to_a.all? do |divisor|
-     int % divisor > 0
+     int % divisor != 0
    end
 end
